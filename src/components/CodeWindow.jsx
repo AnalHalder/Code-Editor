@@ -72,7 +72,7 @@ function CodeWindow() {
   const currentTheme = themes.find((t) => t.name === theme);
 
   return (
-    <div className="flex flex-col h-screen p-4">
+    <div className="flex flex-col h-screen">
       <div
         className={`flex items-center justify-between ${currentTheme.bg} ${currentTheme.text} p-4 shadow-lg`}
       >
@@ -112,7 +112,7 @@ function CodeWindow() {
 
       {/* Editor */}
       <Editor
-        height="80vh"
+        height="100vh"
         language={language}
         value={code}
         onChange={handleEditorChange}
